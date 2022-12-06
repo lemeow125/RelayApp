@@ -19,6 +19,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    header_bar: {
+        backgroundColor: '#151a19'
+    }
 });
 
 export default styles;
