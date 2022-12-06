@@ -1,17 +1,20 @@
+import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import styles from './styles';
 import { Image, View, Text, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Homepage from './Pages/Homepage/Homepage';
 
 const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerTitleStyle: { color: 'white', fontWeight: 'bold', fontSize: '36px', },
+      <Drawer.Navigator screenOptions={{
+        headerTitleStyle: { color: 'white', fontWeight: 'bold', fontSize: 26, },
         headerStyle: { backgroundColor: '#151a19', },
         headerLeft: () => (
           <SafeAreaView style={{ flexDirection: 'row' }}>
@@ -24,8 +27,8 @@ export default function App() {
           </SafeAreaView>
         ),
       }}>
-        <Stack.Screen name="Home" component={Homepage} />
-      </Stack.Navigator>
+        <Drawer.Screen name="Home" component={Homepage} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }
