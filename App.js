@@ -1,15 +1,18 @@
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import styles from './styles';
+
+import Homepage from './Pages/Homepage/Homepage';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.background}>
-        <View style={styles.window}>
-          <Text style={styles.text}>Open up App.js to start working on your app!</Text>
-        </View>
-      </View>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Homepage} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
