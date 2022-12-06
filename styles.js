@@ -9,11 +9,12 @@ const styles = StyleSheet.create({
     text: {
         color: 'white',
         fontWeight: 'bold',
+        fontSize: '26px',
     },
     window: {
         alignContent: 'center',
         height: '30%',
-        width: '50%',
+        width: '70%',
         backgroundColor: '#151a19',
         alignItems: 'center',
         justifyContent: 'center',
