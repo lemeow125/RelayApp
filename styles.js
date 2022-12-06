@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         padding: 50,
+        borderRadius: 10,
     },
     window_image: {
         width: 128,
