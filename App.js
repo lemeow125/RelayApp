@@ -1,29 +1,35 @@
+import * as React from 'react';
+
+// Navigation imports
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import styles from './styles';
-import { Image, View, Text } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
+// Drawer settings & Drawer content/styling imports
+import DrawerScreenSettings from './Components/Drawer/DrawerScreenSettings';
+import CustomDrawerContent from './Components/Drawer/CustomDrawerContent';
+
+//Pages imports
 import Homepage from './Pages/Homepage/Homepage';
 
-const Stack = createNativeStackNavigator();
+
+
+const Drawer = createDrawerNavigator();
+
+function MyDrawer({ navigation }) {
+  return (
+    <Drawer.Navigator
+      drawerContent={(props) => <CustomDrawerContent {...props} />}
+      initialRouteName='Home'
+      screenOptions={DrawerScreenSettings}>
+      <Drawer.Screen name="Home" component={Homepage} />
+    </Drawer.Navigator>
+  );
+}
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerTitleStyle: { color: 'white', fontWeight: 'bold', fontSize: '36px', },
-        headerStyle: { backgroundColor: '#151a19', },
-        headerLeft: () => (
-          <SafeAreaView style={{ flexDirection: 'row' }}>
-            <Image style={styles.navbar_image} source={require('./img/Navbar-button.png')} />
-            <Image style={styles.navbar_image} source={require('./img/App-logo.png')} />
-          </SafeAreaView>
-        ),
-      }}>
-        <Stack.Screen name="Home" component={Homepage} />
-      </Stack.Navigator>
+      <MyDrawer />
     </NavigationContainer>
   );
 }
-
-
