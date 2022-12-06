@@ -4,7 +4,7 @@
     "slug": "RelayProject",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./img/App-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -28,7 +28,7 @@
       "package": "com.keannu125.RelayProject"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./img/App-logo.png"
     },
     "extra": {
       "eas": {
