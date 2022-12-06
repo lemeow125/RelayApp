@@ -22,12 +22,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./img/App-logo.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.keannu125.RelayProject"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85acdfcd-5c16-48f4-a6e4-f51870f10e18"
+      }
     }
   }
 }
