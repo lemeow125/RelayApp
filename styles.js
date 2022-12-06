@@ -1,3 +1,4 @@
+import { cloneElement } from "react";
 import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     background: {
@@ -5,6 +6,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#33464d',
         alignItems: 'center',
         justifyContent: 'center',
+        height: '100%',
+        width: '100%',
     },
     text: {
         color: 'white',
@@ -18,7 +21,6 @@ const styles = StyleSheet.create({
     },
     window: {
         alignContent: 'center',
-        height: '30%',
         width: '70%',
         backgroundColor: '#151a19',
         alignItems: 'center',
@@ -28,23 +30,38 @@ const styles = StyleSheet.create({
     window_image: {
         width: 128,
         height: 128,
+        resizeMode: 'contain',
     },
     window_image_mini: {
         width: 64,
         height: 64,
+        resizeMode: 'contain',
     },
     navbar_image: {
         width: 64,
         height: 64,
-        flex: 1,
         margin: '0.5em',
     },
     line: {
         alignSelf: "stretch",
         borderWidth: 2,
         borderColor: 'white',
-        margin: 10,
+        margin: 20,
     },
+    padding: {
+        paddingVertical: 25,
+    },
+    button: {
+        marginTop: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        elevation: 3,
+        backgroundColor: '#92a9b8',
+        width: '150px',
+    }
 });
 
 export default styles;
