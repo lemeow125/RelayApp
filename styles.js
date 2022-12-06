@@ -33,12 +33,18 @@ const styles = StyleSheet.create({
         width: 64,
         height: 64,
     },
+    navbar_image: {
+        width: 64,
+        height: 64,
+        flex: 1,
+        margin: '0.5em',
+    },
     line: {
         alignSelf: "stretch",
         borderWidth: 2,
         borderColor: 'white',
         margin: 10,
-    }
+    },
 });
 
 export default styles;
