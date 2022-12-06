@@ -11,6 +11,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: '26px',
     },
+    title_text: {
+        color: '#c8e9fc',
+        fontWeight: 'bold',
+        fontSize: '46px',
+    },
     window: {
         alignContent: 'center',
         height: '30%',
@@ -18,9 +23,21 @@ const styles = StyleSheet.create({
         backgroundColor: '#151a19',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: '5em'
     },
-    header_bar: {
-        backgroundColor: '#151a19'
+    window_image: {
+        width: 128,
+        height: 128,
+    },
+    window_image_mini: {
+        width: 64,
+        height: 64,
+    },
+    line: {
+        alignSelf: "stretch",
+        borderWidth: 2,
+        borderColor: 'white',
+        margin: 10,
     }
 });
 
