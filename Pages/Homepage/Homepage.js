@@ -2,7 +2,7 @@ import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
 import RelayButton from '../../Components/Button/Button';
 import styles from '../../styles';
 
-export default function Homepage() {
+export default function Homepage({ navigation }) {
     return (
         <ScrollView>
             <SafeAreaView style={styles.background}>

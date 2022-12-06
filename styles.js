@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
         resizeMode: "contain",
     },
     navbar_image: {
-        width: 32,
-        height: 32,
+        width: 48,
+        height: 48,
         margin: 2,
         resizeMode: "contain",
     },
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         elevation: 3,
         backgroundColor: "#92a9b8",
-        width: 150,
+        width: 170,
     }
 });
 
