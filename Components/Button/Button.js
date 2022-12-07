@@ -4,9 +4,9 @@ export default function RelayButton(props) {
     const { onPress, title } = props
     return (
         <Pressable
-            style={styles.button}
-            onPress={onPress}>
+            onPress={onPress}
+            style={({ pressed }) => [{ backgroundColor: pressed ? '#262c30' : '#92a9b8' }, styles.button]}>
             <Text style={styles.text}>{title}</Text>
-        </Pressable>
+        </Pressable >
     )
 }

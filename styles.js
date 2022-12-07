@@ -67,9 +67,9 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 4,
         elevation: 3,
-        backgroundColor: "#92a9b8",
+        // Button color is in button.js!
         width: 170,
-    }
+    },
 });
 
 export default styles;
