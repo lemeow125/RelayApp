@@ -3,6 +3,7 @@ import {
     DrawerItemList,
     DrawerItem,
 } from '@react-navigation/drawer';
+import { Alert } from 'react-native';
 import styles from '../../styles';
 
 export default function CustomDrawerContent(props) {
@@ -12,7 +13,7 @@ export default function CustomDrawerContent(props) {
             <DrawerItem
                 label="Heh"
                 labelStyle={styles.drawer_label}
-                onPress={() => props.navigation.toggleDrawer()}
+                onPress={() => Alert.alert('Oi!')}
             />
         </DrawerContentScrollView>
     );
