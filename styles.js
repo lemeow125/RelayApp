@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
         fontSize: 36,
         textAlignVertical: 'center',
     },
+    drawer_label: {
+        color: 'white',
+        fontWeight: 'bold',
+    },
     window: {
         alignContent: "center",
         width: "90%",

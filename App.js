@@ -20,7 +20,8 @@ function MyDrawer({ navigation }) {
     <Drawer.Navigator
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       initialRouteName='Home'
-      screenOptions={DrawerScreenSettings}>
+      screenOptions={DrawerScreenSettings}
+    >
       <Drawer.Screen name="Home" component={Homepage} />
     </Drawer.Navigator>
   );
