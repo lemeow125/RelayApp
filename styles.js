@@ -17,6 +17,24 @@ const styles = StyleSheet.create({
         fontSize: 26,
         textAlignVertical: 'center',
     },
+    text_green: {
+        color: "#36a664",
+        fontWeight: "bold",
+        fontSize: 26,
+        textAlignVertical: 'center',
+    },
+    text_yellow: {
+        color: "#d1c132",
+        fontWeight: "bold",
+        fontSize: 26,
+        textAlignVertical: 'center',
+    },
+    text_red: {
+        color: "#743f44",
+        fontWeight: "bold",
+        fontSize: 26,
+        textAlignVertical: 'center',
+    },
     title_text: {
         color: "#c8e9fc",
         fontWeight: "bold",

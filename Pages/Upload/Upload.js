@@ -1,4 +1,4 @@
-import { Button, Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
+import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
 import RButton from '../../Components/Button/RButton';
 import styles from '../../styles';
 import * as DocumentPicker from 'expo-document-picker';
