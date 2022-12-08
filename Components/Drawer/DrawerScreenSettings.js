@@ -1,9 +1,13 @@
 import { View, Image } from 'react-native';
 import styles from '../../styles';
 const DrawerScreenSettings = {
-    headerTitleStyle: { color: 'white', fontWeight: 'bold', fontSize: 26, },
-    headerStyle: { backgroundColor: '#151a19', },
+    headerTitleStyle: { color: 'white', fontSize: 26, },
+    headerStyle: { backgroundColor: '#151a19' },
     headerTintColor: 'white',
+    drawerType: 'slide',
+    drawerLabelStyle: {
+        color: 'white',
+    },
     drawerStyle: {
         backgroundColor: '#151a19',
         width: 240,

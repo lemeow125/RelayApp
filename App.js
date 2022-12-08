@@ -10,11 +10,13 @@ import CustomDrawerContent from './Components/Drawer/CustomDrawerContent';
 
 //Pages imports
 import Homepage from './Pages/Homepage/Homepage';
+import Upload from './Pages/Upload/Upload';
 
 
 
 const Drawer = createDrawerNavigator();
 
+// Add buttons to screens in CustomDrawerContent!
 function MyDrawer({ navigation }) {
   return (
     <Drawer.Navigator
@@ -23,9 +25,11 @@ function MyDrawer({ navigation }) {
       screenOptions={DrawerScreenSettings}
     >
       <Drawer.Screen name="Home" component={Homepage} />
+      <Drawer.Screen name="Upload" component={Upload} />
     </Drawer.Navigator>
   );
 }
+
 
 export default function App() {
   return (

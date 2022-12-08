@@ -1,4 +1,3 @@
-import { cloneElement } from "react";
 import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     background: {
@@ -8,6 +7,9 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         height: "100%",
         width: "100%",
+    },
+    scrollViewBackground: {
+        backgroundColor: "#33464d",
     },
     text: {
         color: "white",
@@ -29,6 +31,15 @@ const styles = StyleSheet.create({
         alignContent: "center",
         width: "90%",
         backgroundColor: "#151a19",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 50,
+        borderRadius: 10,
+    },
+    subwindow: {
+        alignContent: "center",
+        width: "40%",
+        backgroundColor: "#536370",
         alignItems: "center",
         justifyContent: "center",
         padding: 50,
