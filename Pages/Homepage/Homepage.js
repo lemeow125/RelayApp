@@ -1,8 +1,8 @@
 import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
-import RelayButton from '../../Components/Button/Button';
+import NavButton from '../../Components/Button/NavButton';
 import styles from '../../styles';
 
-export default function Homepage({ navigation }) {
+export default function Homepage() {
     return (
         <ScrollView style={styles.scrollViewBackground}>
             <SafeAreaView style={styles.background}>
@@ -19,15 +19,15 @@ export default function Homepage({ navigation }) {
                         <Image style={styles.window_image_mini} source={require('../../img/Online-icon.png')} />
                         <Text style={styles.text}>Online</Text>
                     </View>
-                    <RelayButton title="Upload" goTo='Upload' />
-                    <RelayButton title="History" />
+                    <NavButton title="Upload" goTo='Upload' />
+                    <NavButton title="History" />
                     <View style={styles.padding} />
                     <View style={{ flexDirection: 'row' }}>
                         <Image style={styles.window_image_mini} source={require('../../img/Offline-icon.png')} />
                         <Text style={styles.text}>Offline</Text>
                     </View>
-                    <RelayButton title="Send" />
-                    <RelayButton title="Receive" />
+                    <NavButton title="Send" />
+                    <NavButton title="Receive" />
                 </View>
                 <View style={styles.padding} />
             </SafeAreaView>

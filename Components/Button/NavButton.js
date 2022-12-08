@@ -1,13 +1,12 @@
 import { Pressable, Text } from "react-native"
 import styles from "../../styles"
 import { useNavigation } from "@react-navigation/native"
-export default function RelayButton(props) {
+export default function NavButton(props) {
     const navigation = useNavigation()
-    var { onPress, goTo, title } = props
+    const { goTo, title } = props
     return (
         <Pressable
             onPress={() => {
-                onPress
                 if (goTo) {
                     navigation.navigate(goTo)
                 }

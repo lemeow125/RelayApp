@@ -16,7 +16,7 @@ import Upload from './Pages/Upload/Upload';
 
 const Drawer = createDrawerNavigator();
 
-// Add buttons to screens in CustomDrawerContent!
+// Add custom buttons to screens in CustomDrawerContent!
 function MyDrawer({ navigation }) {
   return (
     <Drawer.Navigator
