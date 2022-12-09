@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { StatusBar } from 'expo-status-bar';
 
 // Navigation imports
 import { NavigationContainer } from '@react-navigation/native';
@@ -34,6 +35,7 @@ function MyDrawer({ navigation }) {
 export default function App() {
   return (
     <NavigationContainer>
+      <StatusBar hidden style='auto' />
       <MyDrawer />
     </NavigationContainer>
   );
