@@ -4,7 +4,7 @@ import styles from '../../styles';
 import * as DocumentPicker from 'expo-document-picker';
 
 
-export default function Upload({ navigation }) {
+export default function UploadInProgress({ navigation }) {
     return (
         <ScrollView style={styles.scrollViewBackground}>
             <SafeAreaView style={styles.background}>
@@ -12,11 +12,10 @@ export default function Upload({ navigation }) {
                 <View style={styles.window}>
                     <Image style={styles.window_image_mini} source={require('../../img/Upload-icon.png')} />
                     <View style={styles.line} />
-                    <Text style={styles.text}>Upload File</Text>
-                    <RButton title="Select" onPress={async () => {
-                        var file = await DocumentPicker.getDocumentAsync()
-                        console.log('File ' + file.name + ' selected')
-                        setTimeout(() => { navigation.navigate('Upload In Progress') }, 2000)
+                    <Text style={styles.text}>Uploading...</Text>
+                    <RButton title="Select" onPress={() => {
+                        DocumentPicker.getDocumentAsync()
+                        setTimeout(() => { console.log('test') }, 5000)
                     }
                     } />
                 </View>
