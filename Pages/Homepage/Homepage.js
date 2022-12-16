@@ -20,7 +20,7 @@ export default function Homepage() {
                         <Text style={styles.text}>Online</Text>
                     </View>
                     <NavButton title="Upload" goTo='Upload' />
-                    <NavButton title="History" />
+                    <NavButton title="History" goTo='Upload History' />
                     <View style={styles.padding} />
                     <View style={{ flexDirection: 'row' }}>
                         <Image style={styles.window_image_mini} source={require('../../img/Offline-icon.png')} />

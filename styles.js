@@ -23,6 +23,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlignVertical: 'center',
     },
+    text_uploadhistory: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 12,
+        textAlignVertical: 'center',
+        paddingVertical: 2,
+    },
     text_green: {
         color: "#36a664",
         fontWeight: "bold",
@@ -90,6 +97,12 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: "white",
         margin: 20,
+    },
+    line_lessmargin: {
+        alignSelf: "stretch",
+        borderWidth: 2,
+        borderColor: "white",
+        margin: 5,
     },
     padding: {
         paddingVertical: 25,

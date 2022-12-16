@@ -12,13 +12,15 @@ import { Provider } from 'react-redux'
 // Drawer settings & Drawer content/styling imports
 import DrawerScreenSettings from './Components/Drawer/DrawerScreenSettings';
 import CustomDrawerContent from './Components/Drawer/CustomDrawerContent';
+import DrawerHide from './Components/Drawer/DrawerHide';
 
 //Pages imports
 import Homepage from './Pages/Homepage/Homepage';
 import Upload from './Pages/Upload/Upload';
 import UploadInProgress from './Pages/UploadInProgress/UploadInProgress';
 import UploadComplete from './Pages/UploadComplete/UploadComplete';
-import DrawerHide from './Components/Drawer/DrawerHide';
+import UploadHistory from './Pages/UploadHistory/UploadHistory';
+
 
 
 
@@ -37,6 +39,7 @@ function MyDrawer({ navigation }) {
       <Drawer.Screen name="Upload" component={Upload} />
       <Drawer.Screen name="Upload In Progress" component={UploadInProgress} options={DrawerHide} />
       <Drawer.Screen name="Upload Complete" component={UploadComplete} options={DrawerHide} />
+      <Drawer.Screen name="Upload History" component={UploadHistory} />
     </Drawer.Navigator>
   );
 }

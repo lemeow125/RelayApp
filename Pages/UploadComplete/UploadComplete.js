@@ -5,7 +5,7 @@ import * as Clipboard from 'expo-clipboard';
 
 // Redux
 import { useSelector, useDispatch } from 'react-redux'
-import { setfilename, setfilesize } from '../../Components/States/OnlineFile/OnlineFileSlice';
+import { setfilename, setfilesize } from '../../Components/States/OnlineFile/onlinefileSlice';
 
 
 export default function UploadComplete({ navigation }) {
@@ -27,11 +27,9 @@ export default function UploadComplete({ navigation }) {
                     <Pressable
                         onPress={async () => {
                             Clipboard.setStringAsync(url)
-                            setTimeout(() => {
-                                navigation.navigate('Home')
-                                dispatch(setfilename(''))
-                                dispatch(setfilesize(''))
-                            }, 700)
+                            dispatch(setfilename(''))
+                            dispatch(setfilesize(''))
+                            await navigation.navigate('Home')
                         }}
                         style={({ pressed }) => [{ backgroundColor: pressed ? '#262c30' : '#92a9b8' }, styles.button_wide]}>
                         <Text style={styles.text_tiny}>{url}</Text>

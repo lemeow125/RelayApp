@@ -1,11 +1,12 @@
-import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
-import RButton from '../../Components/Button/RButton';
-import styles from '../../styles';
-import * as DocumentPicker from 'expo-document-picker';
+import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native'
+import RButton from '../../Components/Button/RButton'
+import styles from '../../styles'
+import * as DocumentPicker from 'expo-document-picker'
 
 // Redux
 import { useDispatch } from 'react-redux'
-import { setfilename, setfilesize } from '../../Components/States/OnlineFile/OnlineFileSlice';
+import { setfilename, setfilesize } from '../../Components/States/OnlineFile/onlinefileSlice'
+import { adduploadfn, adduploadsz } from '../../Components/States/OnlineUploadHistory/uploadhistorySlice'
 
 export default function Upload({ navigation }) {
     const dispatch = useDispatch()
@@ -34,6 +35,9 @@ export default function Upload({ navigation }) {
                         console.log('File size: ' + ConvertBytes(file.size))
                         dispatch(setfilename(file.name))
                         dispatch(setfilesize(ConvertBytes(file.size)))
+                        // File history
+                        dispatch(adduploadfn(file.name))
+                        dispatch(adduploadsz(ConvertBytes(file.size)))
                         setTimeout(() => { navigation.navigate('Upload In Progress') }, 200)
                     }
                     } />
