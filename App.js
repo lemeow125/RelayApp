@@ -17,7 +17,9 @@ import CustomDrawerContent from './Components/Drawer/CustomDrawerContent';
 import Homepage from './Pages/Homepage/Homepage';
 import Upload from './Pages/Upload/Upload';
 import UploadInProgress from './Pages/UploadInProgress/UploadInProgress';
+import UploadComplete from './Pages/UploadComplete/UploadComplete';
 import DrawerHide from './Components/Drawer/DrawerHide';
+
 
 
 
@@ -34,6 +36,7 @@ function MyDrawer({ navigation }) {
       <Drawer.Screen name="Home" component={Homepage} />
       <Drawer.Screen name="Upload" component={Upload} />
       <Drawer.Screen name="Upload In Progress" component={UploadInProgress} options={DrawerHide} />
+      <Drawer.Screen name="Upload Complete" component={UploadComplete} options={DrawerHide} />
     </Drawer.Navigator>
   );
 }

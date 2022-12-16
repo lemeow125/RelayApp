@@ -1,23 +1,25 @@
 import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
-import RButton from '../../Components/Button/RButton';
 import styles from '../../styles';
-import * as DocumentPicker from 'expo-document-picker';
 
+// Redux
+import { useSelector } from 'react-redux'
+import { useEffect } from 'react';
 
 export default function UploadInProgress({ navigation }) {
+    const filename = useSelector((state) => state.onlinefile.filename)
+    const filesize = useSelector((state) => state.onlinefile.filesize)
+    setTimeout(() => { navigation.navigate('Upload Complete') }, 3000)
     return (
         <ScrollView style={styles.scrollViewBackground}>
             <SafeAreaView style={styles.background}>
                 <View style={styles.padding} />
                 <View style={styles.window}>
-                    <Image style={styles.window_image_mini} source={require('../../img/Upload-icon.png')} />
+                    <Image style={styles.window_image_mini} source={require('../../img/Online-icon.png')} />
                     <View style={styles.line} />
-                    <Text style={styles.text}>Uploading...</Text>
-                    <RButton title="Select" onPress={() => {
-                        DocumentPicker.getDocumentAsync()
-                        setTimeout(() => { console.log('test') }, 5000)
-                    }
-                    } />
+                    <Text style={styles.text}>Upload in Progress</Text>
+                    <View style={styles.line} />
+                    <Text style={styles.text_tiny}>{filename}</Text>
+                    <Text style={styles.text_tiny}>{filesize}</Text>
                 </View>
             </SafeAreaView>
         </ScrollView>
