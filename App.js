@@ -5,6 +5,10 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
+// Redux
+import store from './Plugins/Redux/store'
+import { Provider } from 'react-redux'
+
 // Drawer settings & Drawer content/styling imports
 import DrawerScreenSettings from './Components/Drawer/DrawerScreenSettings';
 import CustomDrawerContent from './Components/Drawer/CustomDrawerContent';
@@ -37,9 +41,11 @@ function MyDrawer({ navigation }) {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <StatusBar hidden style='auto' />
-      <MyDrawer />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <StatusBar hidden style='auto' />
+        <MyDrawer />
+      </NavigationContainer>
+    </Provider>
   );
 }
