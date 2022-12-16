@@ -10,7 +10,7 @@ const DrawerScreenSettings = {
     },
     drawerStyle: {
         backgroundColor: '#151a19',
-        width: 300,
+        width: 260,
     },
     headerRight: () => (
         <View style={{ flexDirection: 'row' }}>
