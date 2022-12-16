@@ -3,7 +3,6 @@ import styles from '../../styles';
 
 // Redux
 import { useSelector } from 'react-redux'
-import { useEffect } from 'react';
 
 export default function UploadInProgress({ navigation }) {
     const filename = useSelector((state) => state.onlinefile.filename)
