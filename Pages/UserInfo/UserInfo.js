@@ -4,7 +4,7 @@ import styles from '../../styles'
 // Device info
 import * as Device from 'expo-device';
 
-export default function UserInfo({ navigation }) {
+export default function UserInfo() {
     const brand = Device.brand
     const name = Device.deviceName
     return (

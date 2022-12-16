@@ -29,7 +29,7 @@ import UserInfo from './Pages/UserInfo/UserInfo';
 const Drawer = createDrawerNavigator();
 
 // Add custom buttons to screens in CustomDrawerContent!
-function MyDrawer({ navigation }) {
+function MyDrawer() {
   return (
     <Drawer.Navigator
       drawerContent={(props) => <CustomDrawerContent {...props} />}

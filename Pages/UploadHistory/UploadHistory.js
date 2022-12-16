@@ -4,7 +4,7 @@ import styles from '../../styles'
 // Redux
 import { useSelector } from 'react-redux'
 
-export default function UploadHistory({ navigation }) {
+export default function UploadHistory() {
     const fnhistory = useSelector((state) => state.uploadhistory.uploadfnhistory)
     const szhistory = useSelector((state) => state.uploadhistory.uploadszhistory)
     return (
