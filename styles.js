@@ -30,6 +30,21 @@ const styles = StyleSheet.create({
         textAlignVertical: 'center',
         paddingVertical: 2,
     },
+    text_userinfo: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 16,
+        textAlignVertical: 'center',
+        paddingVertical: 2,
+    },
+    text_userinfo_alignright: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 16,
+        textAlignVertical: 'center',
+        textAlign: "right",
+        paddingVertical: 2,
+    },
     text_green: {
         color: "#36a664",
         fontWeight: "bold",

@@ -3,17 +3,19 @@ import {
     DrawerItemList,
     DrawerItem,
 } from '@react-navigation/drawer';
-import { Alert } from 'react-native';
 import styles from '../../styles';
 import { View } from 'react-native';
 
+import { useNavigation } from "@react-navigation/native"
+
 export default function CustomDrawerContent(props) {
+    const navigation = useNavigation()
     return (
         <DrawerContentScrollView {...props}>
             <DrawerItem
                 label="KEANNU-PHONE"
                 labelStyle={styles.drawer_label}
-                onPress={() => Alert.alert('Oi!')}
+                onPress={() => navigation.navigate('User Info')}
             />
             <View style={styles.line_lessmargin} />
             <DrawerItemList {...props} labelStyle={styles.drawer_label} />

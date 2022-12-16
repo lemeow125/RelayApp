@@ -20,6 +20,7 @@ import Upload from './Pages/Upload/Upload';
 import UploadInProgress from './Pages/UploadInProgress/UploadInProgress';
 import UploadComplete from './Pages/UploadComplete/UploadComplete';
 import UploadHistory from './Pages/UploadHistory/UploadHistory';
+import UserInfo from './Pages/UserInfo/UserInfo';
 
 
 
@@ -40,6 +41,7 @@ function MyDrawer({ navigation }) {
       <Drawer.Screen name="Upload In Progress" component={UploadInProgress} options={DrawerHide} />
       <Drawer.Screen name="Upload Complete" component={UploadComplete} options={DrawerHide} />
       <Drawer.Screen name="Upload History" component={UploadHistory} />
+      <Drawer.Screen name="User Info" component={UserInfo} options={DrawerHide} />
     </Drawer.Navigator>
   );
 }
