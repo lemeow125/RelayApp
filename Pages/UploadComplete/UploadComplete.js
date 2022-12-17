@@ -2,6 +2,7 @@ import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native';
 import styles from '../../styles';
 import { Pressable } from 'react-native';
 import * as Clipboard from 'expo-clipboard';
+import TextTicker from 'react-native-text-ticker'
 
 // Redux
 import { useSelector, useDispatch } from 'react-redux'
@@ -29,7 +30,12 @@ export default function UploadComplete({ navigation }) {
                     <View style={styles.line} />
                     <Text style={styles.text}>Upload Complete</Text>
                     <View style={styles.line} />
-                    <Text style={styles.text_tiny}>{fn}</Text>
+                    <TextTicker
+                        style={styles.text_tiny}
+                        duration={8000}
+                    >
+                        {fn}
+                    </TextTicker>
                     <Text style={styles.text_tiny}>{fsz}</Text>
                     <Pressable
                         onPress={async () => {
