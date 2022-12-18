@@ -28,7 +28,7 @@ import UserInfo from './Pages/UserInfo/UserInfo';
 
 const Drawer = createDrawerNavigator();
 
-// Add custom buttons to screens in CustomDrawerContent!
+// Add buttons to screens in CustomDrawerContent!
 function MyDrawer() {
   return (
     <Drawer.Navigator
@@ -36,11 +36,11 @@ function MyDrawer() {
       initialRouteName='Home'
       screenOptions={DrawerScreenSettings}
     >
-      <Drawer.Screen name="Home" component={Homepage} />
-      <Drawer.Screen name="Upload" component={Upload} />
+      <Drawer.Screen name="Home" component={Homepage} options={DrawerHide} />
+      <Drawer.Screen name="Upload" component={Upload} options={DrawerHide} />
       <Drawer.Screen name="Upload In Progress" component={UploadInProgress} options={DrawerHide} />
       <Drawer.Screen name="Upload Complete" component={UploadComplete} options={DrawerHide} />
-      <Drawer.Screen name="Upload History" component={UploadHistory} />
+      <Drawer.Screen name="Upload History" component={UploadHistory} options={DrawerHide} />
       <Drawer.Screen name="User Info" component={UserInfo} options={DrawerHide} />
     </Drawer.Navigator>
   );

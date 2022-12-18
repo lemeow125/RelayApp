@@ -1,5 +1,5 @@
-import { View, Image } from 'react-native';
-import styles from '../../styles';
+import { View } from 'react-native';
+import PressableAppIcon from '../PressableAppIcon/PressableAppIcon';
 const DrawerScreenSettings = {
     headerTitleStyle: { color: 'white', fontSize: 26, },
     headerStyle: { backgroundColor: '#151a19' },
@@ -14,7 +14,7 @@ const DrawerScreenSettings = {
     },
     headerRight: () => (
         <View style={{ flexDirection: 'row' }}>
-            <Image style={styles.navbar_image} source={require('../../img/App-logo.png')} />
+            <PressableAppIcon />
         </View>
     )
 }

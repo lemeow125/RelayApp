@@ -63,15 +63,38 @@ const styles = StyleSheet.create({
         fontSize: 26,
         textAlignVertical: 'center',
     },
+    text_internet_status_label: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 16,
+        textAlign: 'left',
+        paddingLeft: 6
+    },
+    text_internet_status: (status) => {
+        let tcolor = status ? "#36a664" : "#743f44"
+        return {
+            color: tcolor,
+            fontWeight: "bold",
+            fontSize: 14,
+            textAlign: 'left',
+            paddingLeft: 6,
+        }
+
+    },
     title_text: {
         color: "#c8e9fc",
         fontWeight: "bold",
         fontSize: 36,
         textAlignVertical: 'center',
     },
-    drawer_label: {
+    sidebar_label: {
         color: 'white',
         fontWeight: 'bold',
+    },
+    sidebar_button_label: {
+        color: 'white',
+        fontWeight: 'bold',
+        textAlign: 'left',
     },
     window: {
         alignContent: "center",
@@ -104,8 +127,19 @@ const styles = StyleSheet.create({
     navbar_image: {
         width: 48,
         height: 48,
-        margin: 2,
+        marginRight: 4,
         resizeMode: "contain",
+    },
+    sidebar_image: {
+        width: 32,
+        height: 32,
+        marginLeft: 4,
+        marginTop: 4,
+    },
+    sidebar_button_icon: {
+        width: 16,
+        height: 16,
+        marginRight: 4,
     },
     line: {
         alignSelf: "stretch",
@@ -132,6 +166,18 @@ const styles = StyleSheet.create({
         elevation: 3,
         // Button color is in button.js!
         width: 170,
+    },
+    sidebar_button: {
+        flex: 1,
+        flexDirection: "column",
+        alignSelf: 'center',
+        marginTop: 10,
+        borderRadius: 4,
+        elevation: 3,
+        backgroundColor: "#c8e9fc",
+        width: 240,
+        paddingVertical: 8,
+        paddingHorizontal: 8,
     },
     button_wide: {
         marginTop: 10,
