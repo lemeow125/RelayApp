@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 36,
         textAlignVertical: 'center',
+        paddingLeft: 4,
     },
     sidebar_label: {
         color: 'white',
