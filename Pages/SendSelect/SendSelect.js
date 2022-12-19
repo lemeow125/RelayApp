@@ -1,6 +1,7 @@
 import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native'
 import styles from '../../styles'
 import TextTicker from 'react-native-text-ticker'
+import SendRecipientButton from '../../Components/Button/SendRecipientButton'
 
 // Redux
 import { useSelector } from 'react-redux'
@@ -24,6 +25,14 @@ export default function SendSelect({ navigation }) {
                         {filename}
                     </TextTicker>
                     <Text style={styles.text_tiny}>{filesize}</Text>
+                    <View style={styles.padding} />
+                    <SendRecipientButton title="Panchito's Realme C15" />
+                    <SendRecipientButton title="Toledo's Iphone 100 1TB" />
+                    <SendRecipientButton title="Kim's Samsung S20" />
+                    <View style={styles.line} />
+                    <SendRecipientButton title="IT3R6" />
+                    <SendRecipientButton title="IT3R7" />
+                    <SendRecipientButton title="Close Friends" />
                 </View>
             </SafeAreaView>
         </ScrollView>

@@ -168,6 +168,36 @@ const styles = StyleSheet.create({
         // Button color is in button.js!
         width: 170,
     },
+    send_receiver_button_container: {
+        marginTop: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        paddingVertical: 3,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        elevation: 3,
+        // Button color is in button.js!
+        width: 240,
+    },
+    send_receiver_button_left: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 12,
+        textAlignVertical: 'center',
+        textAlign: 'left',
+        width: 192,
+    },
+    send_receiver_button_right: (selected) => {
+        let bcolor = selected ? "#36a664" : "#743f44"
+        return {
+            backgroundColor: bcolor,
+            alignItems: 'center',
+            justifyContent: "center",
+            borderRadius: 4,
+            paddingHorizontal: 16
+        }
+
+    },
     sidebar_button: {
         flex: 1,
         flexDirection: "column",
