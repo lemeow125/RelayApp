@@ -27,7 +27,7 @@ export default function Homepage() {
                         <Text style={styles.text}>Offline</Text>
                     </View>
                     <NavButton title="Send" goTo='Send' />
-                    <NavButton title="Receive" />
+                    <NavButton title="Receive" goTo='Receive' />
                 </View>
                 <View style={styles.padding} />
             </SafeAreaView>

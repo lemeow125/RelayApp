@@ -25,6 +25,7 @@ import Send from './Pages/Send/Send';
 import SendSelect from './Pages/SendSelect/SendSelect';
 import SendInProgress from './Pages/SendInProgress/SendInProgress';
 import SendComplete from './Pages/SendComplete/SendComplete';
+import Receive from './Pages/Receive/Receive';
 
 
 
@@ -50,6 +51,7 @@ function MyDrawer() {
       <Drawer.Screen name="Send - Select" component={SendSelect} options={DrawerHide} />
       <Drawer.Screen name="Send - Sending" component={SendInProgress} options={DrawerHide} />
       <Drawer.Screen name="Send - Complete" component={SendComplete} options={DrawerHide} />
+      <Drawer.Screen name="Receive" component={Receive} options={DrawerHide} />
     </Drawer.Navigator>
   );
 }
