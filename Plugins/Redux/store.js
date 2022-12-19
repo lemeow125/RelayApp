@@ -8,6 +8,6 @@ export default configureStore({
     reducer: {
         onlinefile: onlinefileReducer,
         uploadhistory: uploadhistoryReducer,
-        offlinefile: offlinefileReducer,
+        sendfile: offlinefileReducer,
     },
 })

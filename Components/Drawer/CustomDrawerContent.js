@@ -34,6 +34,7 @@ export default function CustomDrawerContent(props) {
             <SidebarButton title="Home" goTo='Home' imgpath={require('../../img/Home-logo.png')} />
             <SidebarButton title="Upload History" goTo='Upload History' imgpath={require('../../img/History-icon.png')} />
             <SidebarButton title="Upload" goTo='Upload' imgpath={require('../../img/Upload-icon.png')} />
+            <SidebarButton title="Send" goTo='Send' imgpath={require('../../img/Share-icon.png')} />
         </DrawerContentScrollView>
     );
 }

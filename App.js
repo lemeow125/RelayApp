@@ -21,6 +21,8 @@ import UploadInProgress from './Pages/UploadInProgress/UploadInProgress';
 import UploadComplete from './Pages/UploadComplete/UploadComplete';
 import UploadHistory from './Pages/UploadHistory/UploadHistory';
 import UserInfo from './Pages/UserInfo/UserInfo';
+import Send from './Pages/Send/Send';
+import SendSelect from './Pages/SendSelect/SendSelect';
 
 
 
@@ -42,6 +44,8 @@ function MyDrawer() {
       <Drawer.Screen name="Upload Complete" component={UploadComplete} options={DrawerHide} />
       <Drawer.Screen name="Upload History" component={UploadHistory} options={DrawerHide} />
       <Drawer.Screen name="User Info" component={UserInfo} options={DrawerHide} />
+      <Drawer.Screen name="Send" component={Send} options={DrawerHide} />
+      <Drawer.Screen name="Send - Select" component={SendSelect} options={DrawerHide} />
     </Drawer.Navigator>
   );
 }

@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const offlinefileSlice = createSlice({
-    name: 'offlinefile',
+    name: 'sendfile',
     initialState: {
         filename: '',
         filesize: '',

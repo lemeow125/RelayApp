@@ -26,7 +26,7 @@ export default function Homepage() {
                         <Image style={styles.window_image_mini} source={require('../../img/Offline-icon.png')} />
                         <Text style={styles.text}>Offline</Text>
                     </View>
-                    <NavButton title="Send" />
+                    <NavButton title="Send" goTo='Send' />
                     <NavButton title="Receive" />
                 </View>
                 <View style={styles.padding} />
