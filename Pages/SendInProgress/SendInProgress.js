@@ -9,13 +9,13 @@ import { useSelector } from 'react-redux'
 export default function SendInProgress({ navigation }) {
     const filename = useSelector((state) => state.sendfile.filename)
     const filesize = useSelector((state) => state.sendfile.filesize)
-    setTimeout(() => { navigation.navigate('Home') }, 3000)
+    setTimeout(() => { navigation.navigate('Send - Complete') }, 3000)
     return (
         <ScrollView style={styles.scrollViewBackground}>
             <SafeAreaView style={styles.background}>
                 <View style={styles.padding} />
                 <View style={styles.window}>
-                    <Image style={styles.window_image_mini} source={require('../../img/Online-icon.png')} />
+                    <Image style={styles.window_image_mini} source={require('../../img/Share-icon.png')} />
                     <View style={styles.line} />
                     <Text style={styles.text}>Send in Progress</Text>
                     <View style={styles.line} />
