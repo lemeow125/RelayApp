@@ -2,6 +2,7 @@ import { Image, Text, SafeAreaView, View, ScrollView } from 'react-native'
 import styles from '../../styles'
 import TextTicker from 'react-native-text-ticker'
 import SendRecipientButton from '../../Components/Button/SendRecipientButton'
+import NavButton from '../../Components/Button/NavButton'
 
 // Redux
 import { useSelector } from 'react-redux'
@@ -33,6 +34,8 @@ export default function SendSelect({ navigation }) {
                     <SendRecipientButton title="IT3R6" />
                     <SendRecipientButton title="IT3R7" />
                     <SendRecipientButton title="Close Friends" />
+                    <View style={styles.padding} />
+                    <NavButton title="Send" goTo='Send - Sending' />
                 </View>
             </SafeAreaView>
         </ScrollView>
